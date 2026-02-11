@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Language Runner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+  <script src="wasm/cpp.js"></script> <!-- placeholder -->
+  <script src="wasm/java.js"></script> <!-- placeholder -->
+</head>
+<body>
+
+<h1>🖥️ Multi-Language Runner</h1>
+
+<label for="lang">Select language:</label>
+<select id="lang">
+  <option value="python">Python</option>
+  <option value="cpp">C++ (WASM placeholder)</option>
+  <option value="c">C (WASM placeholder)</option>
+  <option value="java">Java (WASM placeholder)</option>
+</select>
+
+<textarea id="code">
+// Write your code here
+print("Hello world!")
+</textarea>
+<br>
+<button onclick="runCode()">▶ Run</button>
+<pre id="output"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
